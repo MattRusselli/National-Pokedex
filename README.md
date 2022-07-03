@@ -10,7 +10,7 @@
 
 ### **_Description_**
 
-#### A tool for pokémon lovers to use to look up any pokémon and get any information on them.
+#### A tool for pokémon lovers to use to look up any pokémon and get any stats information on them.
 
 ---
 
@@ -23,9 +23,17 @@
 
 ---
 
+### **_Wireframe_**
+
+#### A wireframe concept of what I plan for the pokédex to look like
+
+![Wireframe Pokedex](https://imgur.com/a/RvtpwgU)
+
+---
+
 ### **_Tasks With Trello_**
 
-#### A Trello board was used to keep track of development progress and can be viewed [here!](https://trello.com/b/TTyzDPMX/national-pok%C3%A9dex-api-call).
+#### A Trello board was used to keep track of development progress and can be viewed [here!](https://trello.com/b/TTyzDPMX/national-pok%C3%A9dex-api-call)
 
 ---
 
