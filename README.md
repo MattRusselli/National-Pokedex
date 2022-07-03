@@ -27,7 +27,7 @@
 
 #### A wireframe concept of what I plan for the pokédex to look like
 
-![Wireframe Pokedex](https://imgur.com/a/RvtpwgU)
+#### ![Wireframe Pokedex](https://imgur.com/a/RvtpwgU)
 
 ---
 
