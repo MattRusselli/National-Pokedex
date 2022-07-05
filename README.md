@@ -41,8 +41,14 @@
 
 #### [CSS Calc function](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
 
+#### [Box Shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+
 #### [Radial Gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient)
+
+#### [Linear Gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient)
 
 #### [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 #### [Grid Template](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template)
+
+#### [Styling Button](https://www.freecodecamp.org/news/css-button-style-hover-color-and-background/)
