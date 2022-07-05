@@ -366,6 +366,10 @@ body {
   width: 100px;
 }
 
+.previous-button {
+  font-size: 11px;
+}
+
 .previous-button:hover,
 .next-button:hover {
   background: white;
