@@ -8,6 +8,20 @@
 body {
   display: flex;
   justify-content: center;
+  overflow: hidden;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 50%;
+  white-space: nowrap;
 }
 
 .pokedex {
@@ -16,7 +30,8 @@ body {
   height: 500px;
   margin: 50px;
   width: 800px;
-  margin-left: -5%;
+  margin-top: 10%;
+  margin-left: -102%;
 }
 
 .left-pokedex,
@@ -385,9 +400,8 @@ body {
 
 .non-pokedex-buttons {
   display: flex;
-  justify-content: space-between;
-  margin-top: 40%;
-  margin-left: -50%;
+  justify-content: flex-start;
+  margin-left: -100%;
 }
 
 .lucky-button,
@@ -407,6 +421,7 @@ body {
 
 .lucky-button {
   font-size: 10px;
+  margin-right: -30%;
 }
 
 .lucky-button:hover,
@@ -417,4 +432,9 @@ body {
 .lucky-button:active,
 .search-button:active {
   background: yellow;
+}
+
+.input {
+  margin-left: 35%;
+  border-radius: 5px;
 }
