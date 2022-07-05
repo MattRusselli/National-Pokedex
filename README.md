@@ -27,7 +27,7 @@
 
 #### A wireframe concept of what I plan for the pokédex to look like
 
-#### ![Wireframe Pokedex](https://imgur.com/a/RvtpwgU)
+#### [Wireframe Pokedex](https://imgur.com/a/RvtpwgU)
 
 ---
 
@@ -38,3 +38,11 @@
 ---
 
 ### **_Credits_**
+
+#### [CSS Calc function](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+
+#### [Radial Gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient)
+
+#### [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+#### [Grid Template](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template)

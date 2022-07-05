@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>National Pokédex!</title>
+  </head>
+  <body>
+    
+      <div class="pokedex">
+        <div class="left-pokedex">
+          <div class="left-top">
+            <div class="left-top-blue-circle"></div>
+            <div class="left-top-small-circles">
+              <div class="left-top-circle-red"></div>
+              <div class="left-top-circle-yellow"></div>
+              <div class="left-top-circle-green"></div>
+            </div>
+          </div>
+          <div class="left-pokedex-bottom">
+            <div class="left-main">
+              <div class="left-main-screen-outer">
+                <div class="left-main-screen-inner">
+                  <div class="main-screen hide">
+                    <div class="screen-header">
+                      <span class="poke-name"></span>
+                      <span class="poke-number"></span>
+                    </div>
+                    <div class="poke-image">
+                      <img src="" class="front-image"/>
+                      <img src="" class="back-image"/>
+                    </div>
+                    <div class="poke-description">
+                      <div class="poke-types">
+                        <span class="first-type"></span>
+                        <span class="second-type"></span>
+                      </div>
+                      <div class="poke-stats">
+                        <p class="stats-hp">
+                          HP: <span class="poke-hp"></span>
+                        </p>
+                        <p class="stats-attack">
+                            Attack: <span class="poke-attack"></span>
+                          </p>
+                          <p class="stats-defense">
+                            Defense: <span class="poke-defense"></span>
+                          </p>
+                          <p class="stats-spec-attack">
+                            Special Attack: <span class="poke-spec-attack"></span>
+                          </p>
+                          <p class="stats-spec-defense">
+                            Special Defense: <span class="poke-spec-defense"></span>
+                          </p>
+                          <p class="stats-speed">
+                            Speed: <span class="poke-speed"></span>
+                          </p>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="left-bottom">
+                <div class="controller-d-pad">
+                  <div class="d-pad top"></div>
+                  <div class="d-pad right"></div>
+                  <div class="d-pad bottom"></div>
+                  <div class="d-pad left"></div>
+                  <div class="d-pad middle"></div>
+                </div>
+              </div>
+              <div class="green-box"></div>
+              <div class="red-box"></div>
+              <div class="blue-box"></div>
+              <div class="black-circle"></div>
+              <div class="red-circle"></div>
+            </div>
+            
+      </div>
+      <script src="script.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
