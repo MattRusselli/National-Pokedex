@@ -203,8 +203,16 @@ h1 {
   justify-content: space-between;
   padding: 20px 15px;
   font-size: 8px;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-right: -10%;
+}
+
+.stats-spec-attack {
+  font-size: 6px;
+}
+
+.stats-spec-defense {
+  font-size: 6px;
 }
 
 .left-bottom {
