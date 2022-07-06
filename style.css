@@ -409,16 +409,8 @@ h1 {
   margin: auto;
 }
 
-/* .mute-button {
-  align-items: center;
-  background: silver;
-  border-radius: 5px;
-  border: 1px solid black;
-  display: flex;
-  font-weight: bold;
+#audio {
+  margin-top: 5%;
+  margin-left: -75%;
   height: 20px;
-  text-align: wrap;
-  justify-content: center;
-  text-transform: uppercase;
-  width: 200px;
-} */
+}

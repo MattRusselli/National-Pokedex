@@ -17,8 +17,6 @@ const defStat = document.querySelector('.poke-defense')
 const spAttkStat = document.querySelector('.poke-spec-attack')
 const spDefStat = document.querySelector('.poke-spec-defense')
 const speedStat = document.querySelector('.poke-speed')
-const muteButton = document.querySelector('.mute-button')
-const audio = document.querySelector('.audio')
 
 //Variables
 
