@@ -54,3 +54,5 @@
 #### [Styling Button](https://www.freecodecamp.org/news/css-button-style-hover-color-and-background/)
 
 #### [Axios API Call](https://www.youtube.com/watch?v=qM4G1Ai2ZpE&ab_channel=Academind)
+
+#### [Getting Enter to Work for Inputing](https://stackoverflow.com/questions/7224129/how-to-call-a-javascript-function-after-pressing-enter-key-in-input-type-text)

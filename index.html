@@ -11,6 +11,10 @@
     <title>National Pokédex!</title>
   </head>
   <body>
+    <audio class="audio" controls  autoplay loop>
+        <source src="TitleScreen.mp3" type="audio/mpeg">
+    </audio>
+    <button class="mute-button">Mute Song</button>
     <h1>Welcome to the National Pokédex!</h1>
     <div id="wrapper">
       <div class="pokedex">
@@ -52,10 +56,10 @@
                             Defense: <span class="poke-defense"></span>
                           </p>
                           <p class="stats-spec-attack">
-                            Spec Attack: <span class="poke-spec-attack"></span>
+                            S Attack: <span class="poke-spec-attack"></span>
                           </p>
                           <p class="stats-spec-defense">
-                            Spec Defense: <span class="poke-spec-defense"></span>
+                            S Defense: <span class="poke-spec-defense"></span>
                           </p>
                           <p class="stats-speed">
                             Speed: <span class="poke-speed"></span>
@@ -90,39 +94,18 @@
         <div class="right-pokedex">
           <div class="right-screen-outer">
             <div class="right-screen-inner">
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
-              <div class="poke-list"></div>
+                <div class="poke-image-shiny">
+                    <img src="" class="front-image-shiny"/>
+                    <img src="" class="back-image-shiny"/>
+                  </div>
             </div>
-          </div>
-          <div class="right-pokedex-buttons">
-            <button class="previous-button">Previous</button>
-            <button class="next-button">Next</button>
-          </div>
         </div>
+      </div>
       </div>
       <div class="non-pokedex-buttons">
         <button class="lucky-button">Feeling Chansey?</button>
         <input class="input" type="text" placeholder="Search Pokémon Here!"/>
         <button class="search-button">Search</button>
-      </div>
       </div>
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <script src="script.js"></script>

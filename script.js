@@ -1,14 +1,13 @@
 // DOM Manipulation
-const mainScreen = document.querySelector('.main-screen')
+const rightScreen = document.querySelector('.right-screen-inner')
 const pokeNumber = document.querySelector('.poke-number')
 const pokeName = document.querySelector('.poke-name')
 const frontImg = document.querySelector('.front-image')
 const backImg = document.querySelector('.back-image')
+const frontImgShiny = document.querySelector('.front-image-shiny')
+const backImgShiny = document.querySelector('.back-image-shiny')
 const firstType = document.querySelector('.first-type')
 const secondType = document.querySelector('.second-type')
-const pokeList = document.querySelectorAll('.poke-list')
-const prevButton = document.querySelector('.previous-button')
-const nextButton = document.querySelector('.next-button')
 const inputSearch = document.querySelector('.input')
 const randButton = document.querySelector('.lucky-button')
 const searchButton = document.querySelector('.search-button')
@@ -18,12 +17,12 @@ const defStat = document.querySelector('.poke-defense')
 const spAttkStat = document.querySelector('.poke-spec-attack')
 const spDefStat = document.querySelector('.poke-spec-defense')
 const speedStat = document.querySelector('.poke-speed')
+const muteButton = document.querySelector('.mute-button')
+const audio = document.querySelector('.audio')
 
 //Variables
 
 let pokeApi = `https://pokeapi.co/api/v2/pokemon/`
-let previousUrl = null
-let nextUrl = null
 
 // const pokeTypes = [
 //   'bug',
@@ -63,6 +62,8 @@ displayPoke = (response) => {
   pokeNumber.innerHTML = response.data.id
   frontImg.src = response.data.sprites.front_default
   backImg.src = response.data.sprites.back_default
+  frontImgShiny.src = response.data.sprites.front_shiny
+  backImgShiny.src = response.data.sprites.back_shiny
   firstType.innerHTML = response.data.types[0].type.name
   hpStat.innerHTML = response.data.stats[0].base_stat
   attkStat.innerHTML = response.data.stats[1].base_stat
@@ -89,6 +90,8 @@ displayRandPoke = (response) => {
   pokeNumber.innerHTML = response.data.id
   frontImg.src = response.data.sprites.front_default
   backImg.src = response.data.sprites.back_default
+  frontImgShiny.src = response.data.sprites.front_shiny
+  backImgShiny.src = response.data.sprites.back_shiny
   firstType.innerHTML = response.data.types[0].type.name
   hpStat.innerHTML = response.data.stats[0].base_stat
   attkStat.innerHTML = response.data.stats[1].base_stat
@@ -101,5 +104,16 @@ displayRandPoke = (response) => {
 
 //Event Listeners
 searchButton.addEventListener('click', getPokeApi)
+
+inputSearch.addEventListener(
+  'keydown',
+  (enter) => {
+    let keyCode = enter.keyCode || enter.which
+    if (keyCode === 13) {
+      getPokeApi()
+    }
+  },
+  false
+)
 
 randButton.addEventListener('click', getRandPoke)
