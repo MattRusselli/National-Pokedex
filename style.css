@@ -151,12 +151,12 @@ h1 {
 
 .poke-name {
   color: white;
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .poke-number {
-  color: black;
+  color: white;
   font-size: 20px;
 }
 
@@ -180,6 +180,7 @@ h1 {
 .poke-types {
   height: 100%;
   padding: 5px;
+  justify-content: flex-start;
 }
 
 .first-type,
@@ -187,10 +188,9 @@ h1 {
   background: grey;
   border-radius: 20px;
   display: block;
-  margin-bottom: 30px;
-  padding: 12px;
+  margin-bottom: 10px;
+  padding: 5px;
   text-align: center;
-  margin-top: 100%;
 }
 
 .poke-stats {
@@ -205,14 +205,6 @@ h1 {
   font-size: 8px;
   margin-top: 5%;
   margin-right: -10%;
-}
-
-.stats-spec-attack {
-  font-size: 6px;
-}
-
-.stats-spec-defense {
-  font-size: 6px;
 }
 
 .left-bottom {

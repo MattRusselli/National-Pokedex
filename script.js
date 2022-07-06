@@ -49,6 +49,7 @@ const pokeTypes = [
 const getPokeApi = () => {
   let input = inputSearch.value
   axios.get(pokeApi + input).then((response) => {
+    // console.log(response)
     displayPoke(response)
   })
 }
@@ -57,10 +58,11 @@ const getPokeApi = () => {
 
 displayPoke = (response) => {
   pokeName.innerHTML = response.data.forms[0].name
+  pokeNumber.innerHTML = response.data.id
   frontImg.src = response.data.sprites.front_default
   backImg.src = response.data.sprites.back_default
   firstType.innerHTML = response.data.types[0].type.name
-  secondType.innerHTML = response.data.types[1].type.name
+  //   secondType.innerHTML = response.data.types[1].type.name
   hpStat.innerHTML = response.data.stats[0].base_stat
   attkStat.innerHTML = response.data.stats[1].base_stat
   defStat.innerHTML = response.data.stats[2].base_stat
@@ -68,5 +70,33 @@ displayPoke = (response) => {
   spDefStat.innerHTML = response.data.stats[4].base_stat
   speedStat.innerHTML = response.data.stats[5].base_stat
 }
+
+//Getting the Feeling Chansey? button to work
+
+//Logic to choose a random number between 1-898 (amount of pokemon in national dex as of this project) plus API call with axios to tie it all together
+const GetRandPoke = () => {
+  let randomNum = Math.floor(Math.random() * 897) + 1
+  axios.get(pokeApi + randomNum).then((response) => {
+    displayRandPoke(response)
+  })
+}
+
+displayRandPoke = (response) => {
+  pokeName.innerHTML = response.data.forms[0].name
+  pokeNumber.innerHTML = response.data.id
+  frontImg.src = response.data.sprites.front_default
+  backImg.src = response.data.sprites.back_default
+  firstType.innerHTML = response.data.types[0].type.name
+  //   secondType.innerHTML = response.data.types[1].type.name
+  hpStat.innerHTML = response.data.stats[0].base_stat
+  attkStat.innerHTML = response.data.stats[1].base_stat
+  defStat.innerHTML = response.data.stats[2].base_stat
+  spAttkStat.innerHTML = response.data.stats[3].base_stat
+  spDefStat.innerHTML = response.data.stats[4].base_stat
+  speedStat.innerHTML = response.data.stats[5].base_stat
+}
+
 //Event Listeners
 searchButton.addEventListener('click', getPokeApi)
+
+randButton.addEventListener('click', GetRandPoke)
