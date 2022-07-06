@@ -6,7 +6,7 @@ const frontImg = document.querySelector('.front-image')
 const backImg = document.querySelector('.back-image')
 const firstType = document.querySelector('.first-type')
 const secondType = document.querySelector('.second-type')
-const pokeList = document.querySelector('.poke-list')
+const pokeList = document.querySelectorAll('.poke-list')
 const prevButton = document.querySelector('.previous-button')
 const nextButton = document.querySelector('.next-button')
 const inputSearch = document.querySelector('.input')
@@ -22,34 +22,35 @@ const speedStat = document.querySelector('.poke-speed')
 //Variables
 
 let pokeApi = `https://pokeapi.co/api/v2/pokemon/`
+let previousUrl = null
+let nextUrl = null
 
-const pokeTypes = [
-  'bug',
-  'dark',
-  'dragon',
-  'electric',
-  'fairy',
-  'fighting',
-  'fire',
-  'flying',
-  'grass',
-  'ghost',
-  'ground',
-  'ice',
-  'normal',
-  'water',
-  'poision',
-  'psychic',
-  'rock',
-  'steel'
-]
+// const pokeTypes = [
+//   'bug',
+//   'dark',
+//   'dragon',
+//   'electric',
+//   'fairy',
+//   'fighting',
+//   'fire',
+//   'flying',
+//   'grass',
+//   'ghost',
+//   'ground',
+//   'ice',
+//   'normal',
+//   'water',
+//   'poision',
+//   'psychic',
+//   'rock',
+//   'steel'
+// ]
 
-//Calling the API with Axios
+//Calling the API with Axios for the input
 
 const getPokeApi = () => {
   let input = inputSearch.value
   axios.get(pokeApi + input).then((response) => {
-    // console.log(response)
     displayPoke(response)
   })
 }
@@ -57,46 +58,48 @@ const getPokeApi = () => {
 //Displaying the correct Pokémon on the main screen
 
 displayPoke = (response) => {
+  secondType.innerHTML = ''
   pokeName.innerHTML = response.data.forms[0].name
   pokeNumber.innerHTML = response.data.id
   frontImg.src = response.data.sprites.front_default
   backImg.src = response.data.sprites.back_default
   firstType.innerHTML = response.data.types[0].type.name
-  //   secondType.innerHTML = response.data.types[1].type.name
   hpStat.innerHTML = response.data.stats[0].base_stat
   attkStat.innerHTML = response.data.stats[1].base_stat
   defStat.innerHTML = response.data.stats[2].base_stat
   spAttkStat.innerHTML = response.data.stats[3].base_stat
   spDefStat.innerHTML = response.data.stats[4].base_stat
   speedStat.innerHTML = response.data.stats[5].base_stat
+  secondType.innerHTML = response.data.types[1].type.name
 }
 
-//Getting the Feeling Chansey? button to work
+//Getting the 'Feeling Chansey?' button to work
 
 //Logic to choose a random number between 1-898 (amount of pokemon in national dex as of this project) plus API call with axios to tie it all together
-const GetRandPoke = () => {
-  let randomNum = Math.floor(Math.random() * 897) + 1
+const getRandPoke = () => {
+  let randomNum = Math.floor(Math.random() * 898)
   axios.get(pokeApi + randomNum).then((response) => {
     displayRandPoke(response)
   })
 }
 
 displayRandPoke = (response) => {
+  secondType.innerHTML = ''
   pokeName.innerHTML = response.data.forms[0].name
   pokeNumber.innerHTML = response.data.id
   frontImg.src = response.data.sprites.front_default
   backImg.src = response.data.sprites.back_default
   firstType.innerHTML = response.data.types[0].type.name
-  //   secondType.innerHTML = response.data.types[1].type.name
   hpStat.innerHTML = response.data.stats[0].base_stat
   attkStat.innerHTML = response.data.stats[1].base_stat
   defStat.innerHTML = response.data.stats[2].base_stat
   spAttkStat.innerHTML = response.data.stats[3].base_stat
   spDefStat.innerHTML = response.data.stats[4].base_stat
   speedStat.innerHTML = response.data.stats[5].base_stat
+  secondType.innerHTML = response.data.types[1].type.name
 }
 
 //Event Listeners
 searchButton.addEventListener('click', getPokeApi)
 
-randButton.addEventListener('click', GetRandPoke)
+randButton.addEventListener('click', getRandPoke)

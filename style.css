@@ -180,13 +180,13 @@ h1 {
 .poke-types {
   height: 100%;
   padding: 5px;
+  font-size: 12px;
   justify-content: flex-start;
 }
 
 .first-type,
 .second-type {
-  background: grey;
-  border-radius: 20px;
+  color: white;
   display: block;
   margin-bottom: 10px;
   padding: 5px;
@@ -194,7 +194,6 @@ h1 {
 }
 
 .poke-stats {
-  background: black;
   border-radius: 5px;
   color: white;
   display: flex;
@@ -202,7 +201,7 @@ h1 {
   height: 100%;
   justify-content: space-between;
   padding: 20px 15px;
-  font-size: 8px;
+  font-size: 6.5px;
   margin-top: 5%;
   margin-right: -10%;
 }
