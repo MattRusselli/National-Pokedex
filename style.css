@@ -23,7 +23,6 @@ body {
 h1 {
   color: yellow;
   text-shadow: 4px 4px blue;
-  text-align: center;
   margin-top: 2%;
   margin-left: 55%;
   white-space: nowrap;
@@ -411,6 +410,11 @@ h1 {
 
 #audio {
   margin-top: 5%;
-  margin-left: -75%;
+  margin-left: -78%;
   height: 20px;
+}
+
+.main-screen,
+.poke-image-shiny {
+  display: none;
 }

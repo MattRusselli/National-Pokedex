@@ -1,5 +1,7 @@
 // DOM Manipulation
-const rightScreen = document.querySelector('.right-screen-inner')
+const mainScreen = document.querySelector('.main-screen')
+const mainScreenInner = document.querySelector('.left-main-screen-inner')
+const shinyPoke = document.querySelector('.poke-image-shiny')
 const pokeNumber = document.querySelector('.poke-number')
 const pokeName = document.querySelector('.poke-name')
 const frontImg = document.querySelector('.front-image')
@@ -19,32 +21,18 @@ const spDefStat = document.querySelector('.poke-spec-defense')
 const speedStat = document.querySelector('.poke-speed')
 
 //Variables
-
 let pokeApi = `https://pokeapi.co/api/v2/pokemon/`
+let isShow = true
 
-// const pokeTypes = [
-//   'bug',
-//   'dark',
-//   'dragon',
-//   'electric',
-//   'fairy',
-//   'fighting',
-//   'fire',
-//   'flying',
-//   'grass',
-//   'ghost',
-//   'ground',
-//   'ice',
-//   'normal',
-//   'water',
-//   'poision',
-//   'psychic',
-//   'rock',
-//   'steel'
-// ]
+//Function to show the hidden classes once you press a button to display info (on click in HTML)
+showPoke = () => {
+  if (isShow) {
+    ;(mainScreen.style.display = 'block')((shinyPoke.style.display = 'block'))
+    isShow = true
+  }
+}
 
 //Calling the API with Axios for the input
-
 const getPokeApi = () => {
   let input = inputSearch.value
   axios.get(pokeApi + input).then((response) => {
@@ -52,8 +40,7 @@ const getPokeApi = () => {
   })
 }
 
-//Displaying the correct Pokémon on the main screen
-
+//Displaying the correct Pokémon/informaiton on the screens
 displayPoke = (response) => {
   secondType.innerHTML = ''
   pokeName.innerHTML = response.data.forms[0].name
@@ -82,6 +69,7 @@ const getRandPoke = () => {
   })
 }
 
+//Displaying the correct Pokemon/information on the screens
 displayRandPoke = (response) => {
   secondType.innerHTML = ''
   pokeName.innerHTML = response.data.forms[0].name

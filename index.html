@@ -27,7 +27,7 @@
             <div class="left-main">
               <div class="left-main-screen-outer">
                 <div class="left-main-screen-inner">
-                  <div class="main-screen hide">
+                  <div class="main-screen">
                     <div class="screen-header">
                       <span class="poke-name"></span>
                       <span class="poke-number"></span>
@@ -99,9 +99,9 @@
       </div>
       </div>
       <div class="non-pokedex-buttons">
-        <button class="lucky-button">Feeling Chansey?</button>
+        <button onclick='showPoke()' class="lucky-button">Feeling Chansey?</button>
         <input class="input" type="text" placeholder="Search Pokémon Here!"/>
-        <button class="search-button">Search</button>
+        <button onclick='showPoke()'class="search-button">Search</button>
       </div>
       <div><audio id="audio" controls  autoplay loop>
         <source src="wildbattle.mp3" type="audio/mpeg">
