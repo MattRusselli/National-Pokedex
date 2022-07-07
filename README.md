@@ -56,3 +56,9 @@
 #### [Axios API Call](https://www.youtube.com/watch?v=qM4G1Ai2ZpE&ab_channel=Academind)
 
 #### [Getting Enter to Work for Inputing](https://stackoverflow.com/questions/7224129/how-to-call-a-javascript-function-after-pressing-enter-key-in-input-type-text)
+
+#### [Keeping the Background Image to be Full](https://css-tricks.com/perfect-full-page-background-image/#:~:text=CSS%2DOnly%20Technique%20%231&text=We%20set%20a%20min%2Dheight,smaller%20than%20it%20actually%20is.)
+
+#### [Design is Inspired by Justin Kim from Youtube](https://www.youtube.com/watch?v=wXjSaZb67n8&ab_channel=JustinKim)
+
+#### [Pokemon Type Hex Colors](https://www.epidemicjohto.com/t882-type-colors-hex-colors)
