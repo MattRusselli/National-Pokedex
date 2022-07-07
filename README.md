@@ -39,6 +39,8 @@
 
 ### **_Credits_**
 
+#### [Pokémon API](https://pokeapi.co/)
+
 #### [CSS Calc function](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
 
 #### [Box Shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
